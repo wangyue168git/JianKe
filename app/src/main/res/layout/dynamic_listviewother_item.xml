@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="20dp"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="10px"
+        android:background="#F0F0F0"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="142dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <com.example.ubuntu.market.RoundImageView
+                android:id="@+id/dyna_photo"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="3dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/dyna_photo"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dyna_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="加载中。。"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/dyna_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="今天 11:04 "
+                    android:textSize="10dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:textColor="#FD7575"
+                android:textSize="13dp"
+                android:background="@drawable/textview_border1"
+                android:text=" 动态 "
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/dyna_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra = "1dp"
+            android:letterSpacing="0.002"
+            android:text="欢迎使用" />
+
+        <com.example.ubuntu.market.FixedGridView
+            android:id="@+id/dynamics_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:horizontalSpacing="3dp"
+            android:verticalSpacing="3dp"
+            android:numColumns="3"></com.example.ubuntu.market.FixedGridView>
+        <TextView
+            android:id="@+id/comment_dy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_border2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="283dp"
+            android:layout_marginBottom="13dp"
+            android:textSize="13dp"
+            android:textColor="@color/gray"
+            android:text=" 查看详情 "
+            />
+    </LinearLayout>
+
+</LinearLayout>

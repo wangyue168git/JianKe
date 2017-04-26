@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/article_detail_head"></include>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="40dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/web"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <com.example.ubuntu.market.RoundImageView
+                        android:id="@+id/wz_write_photo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/wz_write_photo"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/wz_write_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="加载中。。"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/wz_write_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="今天 11:04 "
+                            android:textSize="10dp" />
+                    </LinearLayout>
+                    <ImageView
+                        android:id="@+id/wz_delete_dy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/trash"
+                        android:visibility="gone"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="15dp"/>
+                </RelativeLayout>
+
+
+                <WebView
+
+                    android:id="@+id/webview"
+                    android:layout_marginTop="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                </WebView>
+
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="38px"
+                    android:layout_marginTop="5dp"
+                    android:background="#F0F0F0"
+                    />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/textview_border"
+                    android:textSize="15dp"
+                    android:text=" 评论区 "
+                    android:textColor="#FD7575"
+                    android:layout_marginLeft="8dp"
+                    />
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="3px"
+                    android:layout_marginTop="10dp"
+                    android:background="#F0F0F0"
+                    />
+                <ListView
+                    android:id="@+id/wz_comment"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:dividerHeight="1dp"
+                    >
+                </ListView>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/bg_gray"
+                    android:layout_alignParentBottom="true">
+                    <EditText
+                        android:id="@+id/wz_comment_edit"
+                        android:layout_width="290dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/edit_comment_bg"
+                        android:hint="我也说一句..."
+                        android:paddingLeft="8dp"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_gravity="center"
+                        >
+                    </EditText>
+                    <Button
+                        android:text="评论"
+                        android:id="@+id/wz_comment_sub"
+                        android:layout_width="60dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/subcomment"
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="6dp"
+                        android:layout_gravity="center"
+                        >
+                    </Button>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

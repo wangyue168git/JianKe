@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rightPadding" format="dimension" />
+
+    <declare-styleable name="SlidingMenu">
+        <attr name="rightPadding" />
+    </declare-styleable>
+
+    <attr name="focusTextColor" format="color"></attr>
+    <attr name="unFocusTextColor" format="color"></attr>
+    <attr name="itemsCountOnScreen" format="integer"></attr>
+    <attr name="textSize" format="dimension"></attr>
+
+    <declare-styleable name="ViewPaperIndicator">
+        <attr name="focusTextColor"></attr>
+        <attr name="unFocusTextColor"></attr>
+        <attr name="itemsCountOnScreen"></attr>
+        <attr name="textSize"></attr>
+    </declare-styleable>
+
+</resources>

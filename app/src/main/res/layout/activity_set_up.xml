@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/setup_head"></include>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       >
+        <TextView
+            android:id="@+id/setname"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="17dp"
+            android:text="昵称修改"
+            android:background="@drawable/nicheng"
+            android:drawablePadding="@dimen/normal_space"
+            android:drawableRight="@drawable/arrow_normal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/normal_space"
+            android:textAlignment="center"
+            />
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="5dp"
+            android:background="#F0F0F0"
+            />
+        <TextView
+            android:id="@+id/setonlywifi"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:textSize="17dp"
+            android:text="更新提醒"
+            android:background="@drawable/nicheng"
+            android:drawablePadding="@dimen/normal_space"
+            android:drawableRight="@drawable/arrow_normal"
+            android:gravity="center_vertical"
+            android:padding="@dimen/normal_space"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/set_logout"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:background="@drawable/subcomment"
+            android:text="注销当前用户"
+            android:textSize="16dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

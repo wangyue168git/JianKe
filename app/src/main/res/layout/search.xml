@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#00bfff"
+    android:layout_marginTop="1dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="350dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:paddingLeft="10dp"
+            android:paddingBottom="1px"
+            android:focusable="false"
+            android:background="@drawable/edit_bg"
+            android:hint=" 搜索文章、专题、作者"
+            android:textColorHint="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+
+</LinearLayout>

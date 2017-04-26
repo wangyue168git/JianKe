@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.JKSearchActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#00bfff"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/search_back"
+           android:layout_width="40dp"
+           android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_btn"
+            />
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="240dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edit_bg"
+            android:layout_centerInParent="true"
+            android:hint=" 搜索文章、作者"
+            android:textColorHint="@color/white"
+            android:textSize="16dp"
+            />
+        <ImageView
+            android:id="@+id/search_btn"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/btnsearch"/>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/jksearch_activity_history" />
+        <ProgressBar
+            android:id="@+id/search_zhuangtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+
+
+</RelativeLayout>
